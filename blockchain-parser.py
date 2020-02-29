@@ -38,9 +38,9 @@ def merkle_root(lst): # https://gist.github.com/anonymous/7eb080a67398f648c1709e
         lst.append(lst[-1])
     return merkle_root([hash_pair(x,y) for x, y in zip(*[iter(lst)]*2)])
 
-dirA = 'd:/_blocks/' # Directory where blk*.dat files are stored
+dirA = 'C:\Users\curtis\AppData\Roaming\Bitcoin\blocks' # Directory where blk*.dat files are stored
 #dirA = sys.argv[1]
-dirB = 'd:/_hash/' # Directory where to save parsing results
+dirB = 'C:\Users\curtis\AppData\Roaming\Bitcoin\blocks\output\out.txt' # Directory where to save parsing results
 #dirA = sys.argv[2]
 
 fList = os.listdir(dirA)
